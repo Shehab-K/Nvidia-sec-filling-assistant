@@ -1,0 +1,82 @@
+[project]
+# List of environment variables to be provided by each user to use the app.
+user_env = []
+
+# Duration (in seconds) during which the session is saved when the connection is lost
+session_timeout = 3600
+
+# Duration (in seconds) of the user session expiry
+user_session_timeout = 1296000  # 15 days
+
+# Enable third parties caching (e.g., LangChain cache)
+cache = false
+
+# Whether to persist user environment variables (API keys) to the database
+persist_user_env = false
+
+# Whether to mask user environment variables (API keys) in the UI with password type
+mask_user_env = false
+
+# Authorized origins
+allow_origins = ["*"]
+
+[features]
+# Process and display HTML in messages.
+unsafe_allow_html = false
+
+# Process and display mathematical expressions.
+latex = false
+
+# Autoscroll new user messages at the top of the window
+user_message_autoscroll = true
+
+# Automatically tag threads with the current chat profile
+auto_tag_thread = true
+
+# Allow users to edit their own messages
+edit_message = true
+
+# Allow users to share threads
+allow_thread_sharing = false
+
+[features.slack]
+reaction_on_message_received = false
+
+[features.spontaneous_file_upload]
+    accept = ["*/*"]
+    max_files = 20
+    max_size_mb = 500
+
+[features.audio]
+    enabled = true
+    sample_rate = 24000
+    chunk_duration = 1000
+
+[features.mcp]
+    enabled = false
+
+[UI]
+# Name of the assistant
+name = "Financial RAG Assistant"
+logo_file_url = ""
+
+default_theme = "dark"
+
+# Force English language UI
+language = "en"
+
+# Description of the assistant
+description = "Financial QA Assistant for SEC 10-Q / 10-K Filings"
+
+# Chain of Thought (CoT) display mode ("hidden", "tool_call", or "full")
+cot = "full"
+
+# Custom CSS & JS styling files
+custom_css = "/public/custom_style.css"
+custom_js = "/public/custom.js"
+
+# Style of alert boxes ("classic" or "modern")
+alert_style = "modern"
+
+[meta]
+generated_by = "2.9.3"

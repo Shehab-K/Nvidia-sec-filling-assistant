@@ -1,0 +1,24 @@
+[project]
+name = "nvidia-sec-filing-assistant"
+version = "0.1.0"
+description = "English-only RAG assistant for NVIDIA SEC filings"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "chainlit>=2.9.2",
+    "elevenlabs>=2.45.0",
+    "google-generativeai>=0.8.5",
+    "groq>=0.37.1",
+    "llama-index>=0.14.9",
+    "llama-index-embeddings-gemini>=0.4.1",
+    "llama-index-embeddings-google-genai>=0.6.0",
+    "llama-index-llms-gemini>=0.6.1",
+    "llama-index-llms-groq>=0.4.1",
+    "llama-index-vector-stores-qdrant>=0.9.0",
+    "openai>=2.8.1",
+    "plotly>=7.1.0",
+    "pypdf>=5.0.0",
+    "python-docx>=1.2.0",
+    "python-dotenv>=1.2.1",
+    "qdrant-client>=1.16.1",
+]
