@@ -1,4 +1,4 @@
-# NVIDIA SEC Filing Assistant
+# NVIDIA Financial Intelligence | RAG-Powered SEC Filing Assistant
 
 An English-only Chainlit chatbot that answers questions using locally indexed NVIDIA SEC filings and financial reports. It uses Google Gemini embeddings, Groq for question answering and speech transcription, and a local Qdrant vector store.
 
