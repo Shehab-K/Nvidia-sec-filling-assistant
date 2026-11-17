@@ -2,6 +2,12 @@
 
 An English-only Chainlit chatbot that answers questions using locally indexed NVIDIA SEC filings and financial reports. It uses Google Gemini embeddings, Groq for question answering and speech transcription, and a local Qdrant vector store.
 
+## Interface
+
+<p align="center">
+  <img src="docs/screenshots/chatbot-ui.png" alt="NVIDIA SEC Filing Assistant interface" width="900">
+</p>
+
 ## Features
 
 - Grounded financial answers with clickable filing citations, PDF page links, and supporting excerpts.
